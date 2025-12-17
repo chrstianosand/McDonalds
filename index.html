@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- Restored full header with four links -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+        <style>
+        :root{--mc-yellow:#FFC72C;--mc-red:#DA291C;--mc-dark:#333}
+        .mc-topbar{height:6px;background:var(--mc-yellow);width:100%}
+        header.mc-header{background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:900}
+        .mc-nav{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:8px 16px;gap:12px;font-family:'Nunito',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
+        .mc-logo img{width:67px;height:67px;object-fit:contain;border-radius:6px}
+        .mc-links{list-style:none;margin:0;padding:0;display:flex;gap:22px;align-items:center}
+        .mc-links a{color:var(--mc-dark);text-decoration:none;font-weight:600}
+        .mc-actions{display:flex;gap:10px;align-items:center}
+        .mc-cta{background:var(--mc-red);color:#fff;border:none;padding:8px 12px;border-radius:6px;font-weight:700}
+        .mc-toggle{display:none;background:none;border:none;font-size:20px}
+                @media(max-width:720px){
+                    .mc-links{display:none}
+                    /* keep the primary CTA visible on small screens */
+                    .mc-actions{display:flex;gap:8px;align-items:center}
+                    .mc-actions a:first-child{display:none} /* hide 'Min McD' on small screens */
+                    .mc-actions .mc-cta{padding:8px 10px;border-radius:8px;font-size:.95rem}
+                    .mc-toggle{display:block}
+                    .mc-mobile{display:none;background:#fff;padding:8px 16px;border-top:1px solid #eee}
+                    .mc-mobile.open{display:block}
+                }
+        </style>
+
+    <header class="mc-header" aria-label="Hovednavigation">
+        <div class="mc-topbar" aria-hidden="true"></div>
+        <nav class="mc-nav" role="navigation">
+            <div class="mc-left" style="display:flex;align-items:center;gap:18px;">
+                <a class="mc-logo" href="https://www.mcdonalds.com/dk/da-dk.html" target="_blank" rel="noopener noreferrer" title="Åbner i ny fane" aria-label="Åbn McDonald's Danmark">
+                    <img src="billede.png" alt="Logo">
+                </a>
+                <ul class="mc-links" style="display:flex;gap:22px;align-items:center;white-space:nowrap;margin:0;padding:0;">
+                    <li><a href="https://www.mcdonalds.com/dk/da-dk/vores-menu.html" target="_blank" rel="noopener noreferrer" title="Åbner i ny fane">Menu</a></li>
+                    <li><a href="https://www.mcdonalds.com/dk/da-dk.html" target="_blank" rel="noopener noreferrer" title="Åbner i ny fane">Tilbud</a></li>
+                    <li><a href="https://www.mcdonalds.com/dk/da-dk/find-restaurant.html" target="_blank" rel="noopener noreferrer" title="Åbner i ny fane">Find restaurant</a></li>
+                    <li><a href="https://www.mcdonalds.com/dk/da-dk/kundeservice.html" target="_blank" rel="noopener noreferrer" title="Åbner i ny fane">Om os</a></li>
+                </ul>
+            </div>
+            <div class="mc-actions">
+                <a href="https://www.mcdonalds.com/dk/da-dk.html" target="_blank" rel="noopener noreferrer" style="color:var(--mc-dark);text-decoration:none;font-weight:600" title="Åbner i ny fane">Min McD</a>
+                <a href="https://www.mcdonalds.com/dk/da-dk.html" target="_blank" rel="noopener noreferrer"><button class="mc-cta" title="Åbner i ny fane">Bestil</button></a>
+            </div>
+            <!-- hamburger removed per request -->
+        </nav>
+        <div id="mc-mobile-menu" class="mc-mobile" hidden>
+            <a href="https://www.mcdonalds.com/dk/da-dk/vores-menu.html" target="_blank" rel="noopener noreferrer" style="display:block;padding:8px 0" title="Åbner i ny fane">Menu</a>
+            <a href="https://www.mcdonalds.com/dk/da-dk.html" target="_blank" rel="noopener noreferrer" style="display:block;padding:8px 0" title="Åbner i ny fane">Tilbud</a>
+            <a href="https://www.mcdonalds.com/dk/da-dk/find-restaurant.html" target="_blank" rel="noopener noreferrer" style="display:block;padding:8px 0" title="Åbner i ny fane">Find restaurant</a>
+            <a href="https://www.mcdonalds.com/dk/da-dk/kundeservice.html" target="_blank" rel="noopener noreferrer" style="display:block;padding:8px 0" title="Åbner i ny fane">Om os</a>
+            <a href="https://www.mcdonalds.com/dk/da-dk.html" target="_blank" rel="noopener noreferrer" style="display:block;padding:8px 0" title="Åbner i ny fane">Bestil</a>
+        </div>
+    </header>
+    <!-- header removed to restore minimal layout -->
+    
+
+
+
+
+
+        <div id="pw-container" style="
+  max-width:420px;
+  margin:6rem auto;
+  padding:2rem;
+  text-align:center;
+  font-family:system-ui, Segoe UI, Roboto, Arial, sans-serif;
+  background:#ffffff;
+  border-radius:18px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.15);
+">
+
+            <h1>Officiel McDonald's kode</h1>
+            <p>Skriv den rigtige kode for at komme videre.</p>
+
+            <form id="password-form" style="display:flex;gap:.5rem;justify-content:center;margin-top:1rem;">
+                <input id="password-input" type="text" placeholder="Skriv kode" autocomplete="off" required
+                    style="padding:.5rem .75rem;font-size:1rem;border:1px solid #ccc;border-radius:6px;min-width:180px;">
+                <button type="submit" style="padding:.5rem .9rem;font-size:1rem;border-radius:6px;">Go</button>
+            </form>
+
+            <p id="pw-msg" style="color:#b00020;display:none;margin-top:.75rem;">Forkert kode — prøv igen.</p>
+        </div>
+
+        <script>
+        (function () {
+          
+            const toggle = document.querySelector('.mc-toggle');
+            const mobile = document.getElementById('mc-mobile-menu');
+            if (toggle) {
+                toggle.addEventListener('click', function () {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    const willExpand = !expanded;
+                    this.setAttribute('aria-expanded', String(willExpand));
+                    this.setAttribute('aria-label', willExpand ? 'Luk menu' : 'Åbn menu');
+                    if (mobile) {
+                        mobile.hidden = expanded;
+                        mobile.classList.toggle('open', willExpand);
+                    }
+                });
+            }
+          
+            const SECRET = 'kode'; // <-- 
+            const TARGET = 'nextpage.html'; // <--
+
+            const form = document.getElementById('password-form');
+            const input = document.getElementById('password-input');
+            const msg = document.getElementById('pw-msg');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                
+                if (input.value === SECRET) {
+              
+                    window.location.href = TARGET;
+                } else {
+            
+                    msg.style.display = 'block';
+                    input.value = '';
+                    input.focus();
+                }
+            });
+        })();
+        </script>

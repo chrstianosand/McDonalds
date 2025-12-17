@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Next Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--mc-yellow:#FFC72C;--mc-red:#1fa41d;--mc-dark:#222}
+    html,body{height:100%;margin:0;font-family:'Nunito',system-ui,Segoe UI,Roboto,Arial,sans-serif;color:var(--mc-dark)}
+    .page-wrap{min-height:100%;display:flex;flex-direction:column}
+    .topbar{height:6px;background:var(--mc-yellow);width:100%}
+    header{display:flex;align-items:center;gap:12px;padding:12px 20px;border-bottom:1px solid #eee}
+    .logo img{width:72px;height:72px;object-fit:contain}
+    main{flex:1;display:flex;align-items:center;justify-content:center;padding:40px}
+    .card{max-width:720px;text-align:center;padding:36px;border-radius:10px;background:#fff;box-shadow:
+  0 16px 40px rgba(0,0,0,.18),
+  0 6px 16px rgba(0,0,0,.12);
+}
+    h1{color:var(--mc-red);font-size:2rem;margin:0 0 .5rem}
+    p{margin:0 0 1.25rem;color:#333}
+    .actions{display:flex;gap:12px;justify-content:center;margin-top:1rem}
+    .btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700}
+    .btn-primary{background:var(--mc-red);color:#fff}
+    .btn-ghost{background:transparent;border:2px solid #ddd;color:var(--mc-dark)}
+    footer{padding:18px;text-align:center;font-size:.9rem;color:#666}
+    @media(max-width:580px){h1{font-size:1.5rem}.card{padding:20px}}
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+    <div class="topbar" aria-hidden="true"></div>
+    <header>
+      <a class="logo" href="https://www.mcdonalds.com/dk/da-dk.html" target="_blank" rel="noopener noreferrer" aria-label="Åbn McDonald's Danmark">
+        <img src="billede.png" alt="McDonald's logo">
+      </a>
+      <div style="flex:1"></div>
+    </header>
+    <main>
+      <div class="card" role="region" aria-labelledby="welcome-heading">
+        <h1 id="welcome-heading">Tillykke — Escape room fuldført</h1>
+        <p>Tillykke! Du har gennemført escape roomet — spillet er slut. Tak for at spille!</p>
+        <div class="actions">
+          <a class="btn btn-ghost" href="https://www.mcdonalds.com/dk/da-dk.html" target="_blank" rel="noopener noreferrer">Åbn McDonald's</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <small>Dette er en del af et McDonald's escape room — godt gået!</small>
+    </footer>
+  </div>
+
+
+  
+</body>
+</html>
